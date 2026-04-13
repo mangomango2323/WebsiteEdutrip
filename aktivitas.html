@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JEJAK ILMU DI NEGERI LASKAR PELANGI</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Arsenal:wght@400;700&family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        html, body { height: 100%; }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            font-family: 'Poppins', sans-serif;
+            color: white;
+            position: relative;
+        }
+
+        body::before {
+            content: "";
+            position: fixed;
+            inset: 0;
+            background: url('background.png') no-repeat center/cover;
+            z-index: -2;
+        }
+
+        body::after {
+            content: "";
+            position: fixed;
+            inset: 0;
+            background: rgba(0,0,0,0.5);
+            z-index: -1;
+        }
+
+        .navbar {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px 40px;
+            background: rgba(0,0,0,0.7);
+            backdrop-filter: blur(8px);
+            z-index: 1000;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 70px;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-weight: 600;
+            letter-spacing: 3px;
+            font-size: 14px;
+        }
+
+        .nav-links a:hover {
+            color: gold;
+        }
+
+        .nav-links a.active {
+            color: gold;
+        }
+
+        .nav-logo {
+            position: absolute;
+            right: 40px;
+        }
+
+        .nav-logo img {
+            width: 50px;
+        }
+
+        .header {
+            padding-top: 140px;
+            text-align: center;
+            padding-bottom: 50px;
+        }
+
+        .header h1 {
+            font-family: 'Arsenal', sans-serif;
+            font-size: 55px;
+            letter-spacing: 3px;
+        }
+
+        .content {
+            flex: 1;
+            padding: 40px;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .box {
+            background: rgba(255,255,255,0.12);
+            backdrop-filter: blur(8px);
+            padding: 25px;
+            border-radius: 12px;
+            margin-bottom: 20px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+        }
+
+        .day-box {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100px;
+            width: 300px;
+            background: rgba(255,255,255,0.12);
+            backdrop-filter: blur(8px);
+            border-radius: 12px;
+            text-decoration: none;
+            color: white;
+            font-weight: 600;
+            font-size: 18px;
+            letter-spacing: 2px;
+            transition: all 0.3s ease;
+        }
+
+        .day-box:hover {
+            background: rgba(255,215,0,0.3);
+            transform: translateY(-5px);
+            color: gold;
+        }
+
+        .footer {
+            background: rgba(40,30,20,0.95);
+            padding: 30px 20px;
+        }
+
+        .footer-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: auto;
+            text-align: center;
+        }
+
+        .footer-left,
+        .footer-right {
+            width: 30%;
+            font-weight: 600;
+        }
+
+        .footer-center {
+            width: 40%;
+        }
+
+        .footer-center p {
+            margin: 3px 0;
+            font-size: 14px;
+        }
+
+        .footer-left p,
+        .footer-right p {
+            font-size: 14px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="nav-links">
+            <a href="index.html">HOME</a>
+            <a href="aktivitas.html" class="active">AKTIVITAS</a>
+            <a href="galeri.html">GALERI</a>
+            <a href="destinasi.html">DESTINASI</a>
+            <a href="forum.html">FORUM</a>
+        </div>
+
+        <div class="nav-logo">
+            <img src="logo.png" alt="Logo">
+        </div>
+    </div>
+
+    <div class="header">
+        <h1>Rangkaian Aktivitas Perjalanan Edukasi</h1>
+    </div>
+
+    <div class="content">
+
+        <div class="grid">
+            <a href="day1.html" class="day-box">DAY JAKARTA</a>
+            <a href="day2.html" class="day-box">DAY BANDUNG</a>
+            <a href="day3.html" class="day-box">DAY 1 BANGKA</a>
+            <a href="day4.html" class="day-box">DAY 2 BANGKA</a>
+            <a href="day5.html" class="day-box">DAY 1 BELITUNG</a>
+            <a href="day6.html" class="day-box">DAY 2 BELITUNG</a>
+            <a href="day7.html" class="day-box">DAY 3 BELITUNG</a>
+            <a href="day8.html" class="day-box">DAY 4 BELITUNG</a>
+            <a href="day9.html" class="day-box">DAY 5 BELITUNG</a>
+        </div>
+
+    </div>
+
+    <div class="footer">
+        <div class="footer-container">
+            
+            <div class="footer-left">
+                <p>VINCENTIUS YOEL PRAMONO_11.2</p>
+            </div>
+
+            <div class="footer-center">
+                <p><strong>DIBUAT OLEH:</strong></p>
+                <p>SMA SANTA LAURENSIA ALAM SUTERA</p>
+                <p>TANGERANG, BANTEN</p>
+                <p>2026</p>
+            </div>
+
+            <div class="footer-right">
+                <p>MICHELLE ADELINE BUSTAMIN_11.2</p>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+</html>

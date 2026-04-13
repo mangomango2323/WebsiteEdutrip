@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JEJAK ILMU DI NEGERI LASKAR PELANGI</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Arsenal:wght@400;700&family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        html, body { height: 100%; }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            font-family: 'Poppins', sans-serif;
+            color: white;
+        }
+
+        body:before {
+            content: "";
+            position: fixed;
+            inset: 0;
+            background: url('background.png') no-repeat center/cover;
+            z-index: -2;
+        }
+
+        body:after {
+            content: "";
+            position: fixed;
+            inset: 0;
+            background: rgba(0,0,0,0.5);
+            z-index: -1;
+        }
+
+        .navbar {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            padding: 20px 40px;
+            background: rgba(0,0,0,0.7);
+            backdrop-filter: blur(8px);
+            z-index: 1000;
+            align-items: center;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 70px;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-weight: 600;
+            letter-spacing: 3px;
+            font-size: 14px;
+        }
+
+        .nav-links a:hover,
+        .nav-links a.active {
+            color: gold;
+        }
+
+        .nav-logo {
+            position: absolute;
+            right: 40px;
+        }
+
+        .nav-logo img {
+            width: 50px;
+        }
+
+        .header {
+            padding-top: 140px;
+            text-align: center;
+            padding-bottom: 50px;
+        }
+
+        .header h1 {
+            font-family: 'Arsenal';
+            font-size: 55px;
+        }
+
+        .content {
+            flex: 1;
+            padding: 40px;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .box {
+            background: rgba(255,255,255,0.12);
+            backdrop-filter: blur(8px);
+            padding: 25px;
+            border-radius: 12px;
+            margin-bottom: 30px;
+            position: relative;
+        }
+
+        .text {
+            text-align: justify;
+            font-size: 14px;
+            padding-right: 260px;
+        }
+
+        .top-images {
+            position: absolute;
+            top: 25px;
+            right: 20px;
+            display: flex;
+            gap: 10px;
+        }
+
+        .top-left img {
+            width: 120px;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        .top-right {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .top-right img {
+            width: 120px;
+            height: 85px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        .bottom-section {
+            margin-top: 25px;
+            display: grid;
+            grid-template-columns: auto auto 1fr;
+            gap: 15px;
+        }
+
+        .bottom-left {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .bottom-left img {
+            width: 120px;
+            height: 85px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        .bottom-middle img {
+            width: 120px;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        .bottom-text {
+            font-size: 14px;
+            text-align: justify;
+        }
+
+        img {
+            box-shadow: 0 6px 12px rgba(0,0,0,0.4);
+        }
+
+        .footer {
+            background: rgba(40,30,20,0.95);
+            padding: 30px 20px;
+        }
+
+        .footer-container {
+            display: flex;
+            justify-content: space-between;
+            max-width: 1200px;
+            margin: auto;
+            text-align: center;
+            align-items: center;
+        }
+
+        .footer-left,
+        .footer-right {
+            width: 30%;
+            font-weight: 600;
+        }
+
+        .footer-center {
+            width: 40%;
+        }
+
+        .footer-center p {
+            margin: 3px 0;
+            font-size: 14px;
+        }
+
+        .footer-left p,
+        .footer-right p {
+            font-size: 14px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="nav-links">
+            <a href="index.html">HOME</a>
+            <a href="aktivitas.html" class="active">AKTIVITAS</a>
+            <a href="galeri.html">GALERI</a>
+            <a href="destinasi.html">DESTINASI</a>
+            <a href="forum.html">FORUM</a>
+        </div>
+
+        <div class="nav-logo">
+            <img src="logo.png">
+        </div>
+    </div>
+
+    <div class="header">
+        <h1>Petualangan Antar Pulau dan Kenangan 
+            <br>Tak Terlupakan</h1>
+        <h2>DAY 4 - Belitung</h2>
+    </div>
+
+    <div class="content">
+        <div class="box">
+
+            <div class="text">
+                <p>
+                    Hari selanjutnya menjadi salah satu hari paling seru selama edutrip karena kami melakukan kegiatan island hopping yang sudah sangat dinantikan sejak awal perjalanan. Sejak pagi, kami sudah bersiap dengan penuh semangat karena tahu hari ini akan diisi dengan banyak aktivitas menyenangkan di laut. Kami mengunjungi beberapa pulau seperti Pulau Lengkuas, Pulau Kepayang, dan Pulau Kelayang yang masing-masing memiliki keindahan alam yang berbeda dan unik. Air laut yang sangat jernih dengan gradasi warna biru yang indah serta pasir putih yang bersih membuat suasana terasa sangat menyenangkan dan menenangkan. Kami juga melakukan aktivitas snorkeling, melihat keindahan bawah laut yang penuh dengan ikan berwarna-warni dan terumbu karang yang masih terjaga dengan baik. Beberapa dari kami bahkan mencoba lebih lama di air karena terlalu menikmati suasananya. Pengalaman ini menjadi salah satu momen yang paling berkesan karena memberikan pengalaman baru yang jarang bisa dirasakan dalam kehidupan sehari-hari.
+                </p>
+            </div>
+
+            <div class="top-images">
+                <div class="top-left">
+                    <img src="roock.jpg">
+                </div>
+                <div class="top-right">
+                    <img src="boat.jpg">
+                    <img src="boat 1.jpg">
+                </div>
+            </div>
+
+            <div class="bottom-section">
+
+                <div class="bottom-left">
+                    <img src="underwater.jpg">
+                    <img src="beach rock.png">
+                </div>
+
+                <div class="bottom-middle">
+                    <img src="tree.png">
+                </div>
+
+                <div class="bottom-text">
+                    <p>
+                        Selain itu, kami juga mengunjungi Goa Kelayang yang memiliki keunikan tersendiri dan memberikan pengalaman berbeda dari tempat sebelumnya. Kami bisa menjelajahi area sekitar goa sambil menikmati pemandangan alam yang masih alami dan belum terlalu ramai. Seluruh rangkaian kegiatan hari itu terasa sangat seru dan penuh kesan, bahkan waktu terasa berjalan begitu cepat karena kami terlalu menikmati setiap momennya bersama teman-teman. Kebersamaan yang tercipta membuat pengalaman ini menjadi lebih berarti dan sulit untuk dilupakan. Sebelum kembali, kami juga menyempatkan diri untuk membeli oleh-oleh sebagai kenang-kenangan dari perjalanan ini, baik untuk diri sendiri maupun keluarga di rumah. Hari tersebut benar-benar menjadi puncak keseruan dari seluruh rangkaian edutrip yang telah kami jalani bersama dengan penuh kebahagiaan dan cerita menarik.                </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="footer-container">
+
+            <div class="footer-left">
+                <p>VINCENTIUS YOEL PRAMONO_11.2</p>
+            </div>
+
+            <div class="footer-center">
+                <p><strong>DIBUAT OLEH:</strong></p>
+                <p>SMA SANTA LAURENSIA ALAM SUTERA</p>
+                <p>TANGERANG, BANTEN</p>
+                <p>2026</p>
+            </div>
+
+            <div class="footer-right">
+                <p>MICHELLE ADELINE BUSTAMIN_11.2</p>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+</html>
